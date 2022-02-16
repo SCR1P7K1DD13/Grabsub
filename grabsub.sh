@@ -54,7 +54,7 @@ then
    echo "" 
 elif [ ! -d "recon/$TARGET" ]
 then
-    mkdir recon/$TARGET
+    sudo mkdir recon/$TARGET
 fi
 
 echo "$GREEN [+] Executing crt.sh module$RESET"
