@@ -21,7 +21,7 @@ Scripts:
 git clone https://github.com/SCR1P7K1DD13/grabsub.git
 cd grabsub
 chmod +x install.sh grabsub.sh
-./install.sh
+sudo ./install.sh
 ```
 
 ### Usage
