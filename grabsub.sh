@@ -103,6 +103,9 @@ alive_scan=`cat recon/$TARGET/$TARGET-all.txt | tools/httpx/httpx -silent -fc 40
 filtered_subs=`wc --lines < recon/$TARGET/$TARGET-alive.txt`
 count=`expr $unique_subs - $filtered_subs`
 echo "$ORANGE filtered $count domains with 404 status code $RESET"
+echo "$ORANGE Taking screeshots of alive targets $RESET"
+mkdir $(pwd)/recon/$TARGET/screenshots
+screenshot=`$(pwd)/tools/gowitness/gowitness file -f $(pwd)/recon/$TARGET/$TARGET-alive.txt -P $(pwd)/recon/$TARGET/screenshots/`
 echo "$RED [+] Domains saved to: recon/$TARGET/$TARGET-all.txt"
 echo "$RED [+] Alive domains saved to: recon/$TARGET/$TARGET-alive.txt"
 echo "$RED + -- ----------------------------=[Done!]=----------------------------------- -- +$RESET"
