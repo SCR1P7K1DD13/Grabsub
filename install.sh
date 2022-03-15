@@ -31,8 +31,8 @@ status="install ok installed"
 go=$(go= dpkg-query -W --showformat='${Status}\n' golang-go | grep "install ok installed")
 
 if [ "$status" = "$go" ];then
-   echo "$GREEN [+]go - requirement already satisfied $RESET"
-   echo "$ORANGE Checking for version details $RESET"
+   echo -e "$GREEN [+]go - requirement already satisfied $RESET"
+   echo -e "$ORANGE Checking for version details $RESET"
    go=$(dpkg-query --showformat='${Version}' --show golang-go | awk -F[:,~] '{print $2}') 
    version="1.17"
    compare=`echo | awk "{ print ($version <= $go)?1 : 0 }"`
