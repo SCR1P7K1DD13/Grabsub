@@ -63,24 +63,17 @@ else
     sudo ln -s /usr/bin/python3 /usr/bin/python
 fi
 
-golang=$(dpkg-query -W --showformat='${Status}\n' golang-go | grep "install ok installed")
-if [ "$status" == "$golang" ]; then
-    echo -e "$GREEN [+]golang - requirement already satisfied $RESET"
-else
-    sudo apt install golang-go
-fi
-
-mkdir tools/httpx
+sudo mkdir tools/httpx
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 cp $HOME/go/bin/httpx tools/httpx/
 chmod +x tools/httpx/httpx
 
-mkdir tools/subfinder
+sudo mkdir tools/subfinder
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 cp $HOME/go/bin/subfinder tools/subfinder/
 chmod +x tools/subfinder/subfinder
 
-mkdir tools/assetfinder
+sudo mkdir tools/assetfinder
 go install -v github.com/tomnomnom/assetfinder@latest
 cp $HOME/go/bin/assetfinder tools/assetfinder/
 chmod +x tools/assetfinder/assetfinder
