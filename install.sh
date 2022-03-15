@@ -77,3 +77,8 @@ sudo mkdir tools/assetfinder
 go install -v github.com/tomnomnom/assetfinder@latest
 cp $HOME/go/bin/assetfinder tools/assetfinder/
 chmod +x tools/assetfinder/assetfinder
+
+sudo mkdir tools/gowitness
+go install -v github.com/sensepost/gowitness@latest
+cp $HOME/go/bin/gowitness tools/gowitness/
+chmod +x tools/gowitness/gowitness
