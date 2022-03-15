@@ -54,7 +54,7 @@ then
    echo "" 
 elif [ ! -d "recon/$TARGET" ]
 then
-    sudo mkdir recon/$TARGET
+    mkdir recon/$TARGET
 fi
 
 touch /tmp/curl.out
