@@ -108,4 +108,5 @@ mkdir $(pwd)/recon/$TARGET/screenshots
 screenshot=`$(pwd)/tools/gowitness/gowitness file -f $(pwd)/recon/$TARGET/$TARGET-alive.txt -P $(pwd)/recon/$TARGET/screenshots/`
 echo "$RED [+] Domains saved to: recon/$TARGET/$TARGET-all.txt"
 echo "$RED [+] Alive domains saved to: recon/$TARGET/$TARGET-alive.txt"
+echo "$RED [+] Screeenshots saved to: recon/$TARGET/screenshots"
 echo "$RED + -- ----------------------------=[Done!]=----------------------------------- -- +$RESET"
