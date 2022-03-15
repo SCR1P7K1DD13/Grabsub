@@ -20,7 +20,7 @@ Scripts:
 ```
 git clone https://github.com/SCR1P7K1DD13/grabsub.git
 cd grabsub
-chmod +x install.sh grabsub.sh
+chmod +x *.sh
 sudo ./install.sh
 ```
 
