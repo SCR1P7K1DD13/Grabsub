@@ -27,7 +27,7 @@ sudo ./install.sh
 ### Usage
 
 ``` 
-./grabsub.sh <target>
+sudo ./grabsub.sh <target>
 Eg: ./grabsub.sh google.com
 ```
 
