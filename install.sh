@@ -38,7 +38,7 @@ if [ "$status" = "$go" ];then
    compare=`echo | awk "{ print ($version <= $go)?1 : 0 }"`
    
 	if [ "$compare" -eq "1" ];then
-		echo "golang-go is already the newest version " 
+		echo -e "$GREEN golang-go is already the newest version $RESET" 
 	else
 		echo "Checking for updates ......"
 		sudo apt install golang-go
