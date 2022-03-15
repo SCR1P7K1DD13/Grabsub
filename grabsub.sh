@@ -57,6 +57,11 @@ then
     sudo mkdir recon/$TARGET
 fi
 
+touch /tmp/curl.out
+touch /tmp/temp-1.txt
+touch /tmp/temp-2.txt
+touch /tmp/temp-3.txt
+
 echo "$GREEN [+] Executing crt.sh module$RESET"
 curl -s https://crt.sh/?q=$TARGET > /tmp/curl.out
 cat /tmp/curl.out | grep $TARGET | grep TD | sed -e 's/<//g' | sed -e 's/>//g' | sed -e 's/TD//g' | sed -e 's/\///g' | sed -e 's/ //g' | sed -n '1!p' | sort -u > /tmp/temp-1.txt
