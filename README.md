@@ -1,4 +1,8 @@
 # 🔎grabsub
+
+![Python Version](https://img.shields.io/badge/shell-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 Welcome to **grabsub**, your go-to tool for comprehensive subdomain discovery! This open-source project leverages the power of existing subdomain discovery tools to assemble an extensive and detailed list of subdomains associated with a target domain.
 
 ## Key Features
