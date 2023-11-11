@@ -48,6 +48,6 @@ This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LIC
 
 ## Disclaimer
 
-Use SubDomainHarvester responsibly and ensure compliance with applicable laws and ethical standards. The authors are not responsible for any misuse of the tool.
+Use grabsub responsibly and ensure compliance with applicable laws and ethical standards. The authors are not responsible for any misuse of the tool.
 
 Happy hunting!
