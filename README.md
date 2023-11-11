@@ -5,9 +5,9 @@ Welcome to **grabsub**, your go-to tool for comprehensive subdomain discovery! T
 
 1. **Tool Integration:** grabsub seamlessly integrates popular subdomain discovery tools, such as Sublist3r, subfinder, and more, maximizing the scope and accuracy of subdomain identification.
 
-2. **Automated Scanning:** Effortlessly launch automated scans against target domains, utilizing a combination of techniques to identify subdomains, including brute-force, DNS interrogation, and certificate transparency logs.
+2. **Automated Scanning:** Effortlessly launch automated scans against target domains, utilizing a combination of techniques to identify subdomains.
    
-3. **Data Aggregation:** SubDomainHarvester aggregates results from multiple tools into a unified and organized output, providing a comprehensive view of the target's subdomain landscape.
+3. **Data Aggregation:** grabsub aggregates results from multiple tools into a unified and organized output, providing a comprehensive view of the target's subdomain landscape.
 
 ## 🔧Sources and tools 
 
